@@ -1,0 +1,13 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: Simple S3 bucket
+Parameters:
+  AMI:
+    Descripion: Ami to start virtual server
+    Type: String
+    MaxLength: 12
+    MinLength: 12
+Resources:
+  S3Bucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: learn-cloudformation-test
